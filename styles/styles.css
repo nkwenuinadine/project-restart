@@ -92,13 +92,14 @@ body {
     background-color: #e0e0e0;
     cursor: not-allowed;
 } */
-/* @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
+  background-image: linear-gradient(90deg, #7d5fff, #7158e2);
  font-family: 'Muli', sans-serif;
   display: flex;
   align-items: center;
@@ -108,7 +109,7 @@ body {
   overflow: hidden;
 }
 
-.container {
+/*.container {
   display: flex;
   width: 90vw;
 }
@@ -145,7 +146,7 @@ body {
   transition: opacity 0.3s ease-in 0.4s;
 } */
 
-@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
 * {
   box-sizing: border-box;
@@ -277,4 +278,45 @@ nav ul li + li + li {
 .content p {
   color: #333;
   line-height: 1.5;
+} */
+
+.search {
+  position: relative;
+  height: 50px;
+}
+
+.search .input {
+  background-color: #fff;
+  border: 0;
+  padding: 15px;
+  font-size: 18px;
+  height: 50px;
+  width: 50px;
+  transition: width 0.3s ease;
+}
+
+.btn {
+  background-color: #fff;
+  cursor: pointer;
+  border: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+
+.search.active .input {
+  width: 200px;
+}
+
+.search.active .btn {
+  transform: translateX(198px);
 }
